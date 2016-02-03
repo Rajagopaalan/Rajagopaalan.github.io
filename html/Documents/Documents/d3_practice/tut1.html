@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+<body>
+<p>Para 0</p>
+<p>Para 1</p>
+<p>Para 2</p>
+<p>Para 3</p>
+<p>Para 4</p>
+<script>
+d3.selectAll("p")
+	.data([2,8,14,20,40])
+	.style("font-size",function(d){return d+"px"});
+</script>
+</body>
+</html>

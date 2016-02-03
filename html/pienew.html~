@@ -1,0 +1,125 @@
+
+<!-- saved from url=(0041)http://10.140.162.38/AdaptiveWeb/pie.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head>
+<body>
+
+<div id="pieChart" d3pie="0.1.6"><svg width="590" height="400"><g class="p0_lineGroups" style="opacity: 1;"><g class="p0_lineGroup"><path d="M396.3249722427793,159.5L398.80103998620444,157.5C401.2771077296296,155.5,406.22924321648,151.5,411.1813787033303,148.46666666666667C416.1335141901807,145.43333333333334,421.08564967703103,143.36666666666667,423.5617174204562,142.33333333333334L426.0377851638814,141.3" stroke="#cccccc" stroke-width="1" fill="none" style="opacity: 1;"></path></g><g class="p0_lineGroup"><path d="M339.77396158671553,326.0939053038205L340.61753949653564,327.3257446805022C341.46111740635575,328.55758405718393,343.14827322599604,331.02126281054734,345.5225848652765,335.5819536506076C347.89689650455693,340.14264449066775,350.95836396347767,346.80034741742475,352.48909769293806,350.12919888080324L354.0198314223984,353.45805034418174" stroke="#cccccc" stroke-width="1" fill="none" style="opacity: 1;"></path></g><g class="p0_lineGroup"><path d="M236.5,319.3249722427793L235.74999999999997,320.47967278115857C235,321.6343733195378,233.5,323.94377439629636,230.49999999999997,328.19590988314667C227.5,332.44804536999703,223,338.6429152669392,220.74999999999997,341.74035021541033L218.5,344.8377851638814" stroke="#cccccc" stroke-width="1" fill="none" style="opacity: 1;"></path></g><g class="p0_lineGroup"><path d="M186.90609469617942,262.7739615867155L185.59092198616435,263.28420616320227C184.27574927614933,263.79445073968907,181.64540385611923,264.8149398926626,176.384713016059,266.48925153194307C171.12402217599885,268.1635631712236,163.23298591590856,270.4916972968109,159.28746778586338,271.65576435960463L155.34194965581827,272.81983142239835" stroke="#cccccc" stroke-width="1" fill="none" style="opacity: 1;"></path></g><g class="p0_lineGroup"><path d="M181.98667832417902,187.718171723005L177.87297501902273,186.6828955425949C173.75927171386647,185.64761936218483,165.5318651035539,183.57706700136467,160.04692736334556,181.83003209415125C154.5619896231372,180.0829971869378,151.819520753033,178.65947973333107,150.44828631798092,177.94772100652773L149.07705188292883,177.23596227972436" stroke="#cccccc" stroke-width="1" fill="none" style="opacity: 1;"></path></g><g class="p0_lineGroup"><path d="M202.1776591859255,146.77491280597968L198.75424582476055,144.3398670899448C195.3308324635956,141.9048213739099,188.48400574126572,137.03472994184017,183.9194545930458,133.42133565379365C179.35490344482588,129.80794136574713,177.0726278707159,127.45124422172388,175.93149008366092,126.27289564971227L174.79035229660596,125.09454707770064" stroke="#cccccc" stroke-width="1" fill="none" style="opacity: 1;"></path></g><g class="p0_lineGroup"><path d="M250.22603841328453,109.90609469617944L248.44530468382416,106.21057656613429C246.6645709543638,102.51505843608913,243.1031034954431,95.12402217599885,240.72879185616262,89.82999800260531C238.35448021688214,84.53597382921178,237.16732439724188,81.33896174251502,236.57374648742177,79.74045569916665L235.98016857760166,78.14194965581827" stroke="#cccccc" stroke-width="1" fill="none" style="opacity: 1;"></path></g></g><g transform="translate(295,218)" class="p0_pieChart"><g class="p0_arc" transform="rotate(0)"><path id="p0_segment0" fill="#7e3838" style="stroke: rgb(255, 255, 255); stroke-width: 1px; fill: rgb(126, 56, 56);" d="M7.164183775012016e-15,-117A117,117 0 0,1 101.32497224277932,58.49999999999998L18.186533479473212,10.499999999999996A21,21 0 0,0 1.2858791391047208e-15,-21Z" data-index="0"></path></g><g class="p0_arc" transform="rotate(120)"><path id="p0_segment1" fill="#7e6538" style="stroke: rgb(255, 255, 255); stroke-width: 1px;" d="M7.164183775012016e-15,-117A117,117 0 0,1 113.01332167582099,-30.28182827699492L20.284442352070435,-5.435199947152935A21,21 0 0,0 1.2858791391047208e-15,-21Z" data-index="1"></path></g><g class="p0_arc" transform="rotate(195)"><path id="p0_segment2" fill="#7c7e38" style="stroke: rgb(255, 255, 255); stroke-width: 1px; fill: rgb(124, 126, 56);" d="M7.164183775012016e-15,-117A117,117 0 0,1 58.499999999999986,-101.32497224277932L10.499999999999998,-18.186533479473212A21,21 0 0,0 1.2858791391047208e-15,-21Z" data-index="2"></path></g><g class="p0_arc" transform="rotate(225)"><path id="p0_segment3" fill="#587e38" style="stroke: rgb(255, 255, 255); stroke-width: 1px;" d="M7.164183775012016e-15,-117A117,117 0 0,1 82.73149339882606,-82.73149339882605L14.849242404917499,-14.849242404917497A21,21 0 0,0 1.2858791391047208e-15,-21Z" data-index="3"></path></g><g class="p0_arc" transform="rotate(270)"><path id="p0_segment4" fill="#387e45" style="stroke: rgb(255, 255, 255); stroke-width: 1px;" d="M7.164183775012016e-15,-117A117,117 0 0,1 58.499999999999986,-101.32497224277932L10.499999999999998,-18.186533479473212A21,21 0 0,0 1.2858791391047208e-15,-21Z" data-index="4"></path></g><g class="p0_arc" transform="rotate(300)"><path id="p0_segment5" fill="#387e6a" style="stroke: rgb(255, 255, 255); stroke-width: 1px;" d="M7.164183775012016e-15,-117A117,117 0 0,1 30.281828276994926,-113.01332167582099L5.4351999471529355,-20.284442352070435A21,21 0 0,0 1.2858791391047208e-15,-21Z" data-index="5"></path></g><g class="p0_arc" transform="rotate(315)"><path id="p0_segment6" fill="#386a7e" style="stroke: rgb(255, 255, 255); stroke-width: 1px;" d="M7.164183775012016e-15,-117A117,117 0 0,1 82.73149339882606,-82.73149339882605L14.849242404917499,-14.849242404917497A21,21 0 0,0 1.2858791391047208e-15,-21Z" data-index="6"></path></g></g><text id="p0_title" class="p0_title" x="297.5" y="30" text-anchor="middle" fill="#333333" style="font-size: 22px; font-family: georgia;">URL</text><text x="297.5" y="53" id="p0_subtitle" class="p0_subtitle" text-anchor="middle" fill="#999999" style="font-size: 10px; font-family: &#39;lucida sans&#39;;">Share of URLs that user has clicked</text><text x="295" y="395" id="p0_footer" class="p0_footer" text-anchor="middle" fill="#999999" style="font-size: 11px; font-family: &#39;open sans&#39;;">Source: class_click.csv</text><g class="p0_labels-inner"><g id="p0_labelGroup0-inner" data-index="0" class="p0_labelGroup-inner" transform="translate(356.87455501464325,183.58333333333334)" style="opacity: 1;"><text id="p0_segmentValue0-inner" class="p0_segmentValue-inner" style="font-size: 10px; font-family: verdana; fill: rgb(225, 225, 225);">8</text></g><g id="p0_labelGroup1-inner" data-index="1" class="p0_labelGroup-inner" transform="translate(320.94613513913833,289.4250452500056)" style="opacity: 1;"><text id="p0_segmentValue1-inner" class="p0_segmentValue-inner" style="font-size: 10px; font-family: verdana; fill: rgb(225, 225, 225);">5</text></g><g id="p0_labelGroup2-inner" data-index="2" class="p0_labelGroup-inner" transform="translate(255.33333333333331,285.12455501464325)" style="opacity: 1;"><text id="p0_segmentValue2-inner" class="p0_segmentValue-inner" style="font-size: 10px; font-family: verdana; fill: rgb(225, 225, 225);">2</text></g><g id="p0_labelGroup3-inner" data-index="3" class="p0_labelGroup-inner" transform="translate(223.82495474999433,249.1961351391383)" style="opacity: 1;"><text id="p0_segmentValue3-inner" class="p0_segmentValue-inner" style="font-size: 10px; font-family: verdana; fill: rgb(225, 225, 225);">3</text></g><g id="p0_labelGroup4-inner" data-index="4" class="p0_labelGroup-inner" transform="translate(220.69951357917927,201.51111764737925)" style="opacity: 1;"><text id="p0_segmentValue4-inner" class="p0_segmentValue-inner" style="font-size: 10px; font-family: verdana; fill: rgb(225, 225, 225);">2</text></g><g id="p0_labelGroup5-inner" data-index="5" class="p0_labelGroup-inner" transform="translate(233.5274017050182,175.49873377701843)" style="opacity: 1;"><text id="p0_segmentValue5-inner" class="p0_segmentValue-inner" style="font-size: 10px; font-family: verdana; fill: rgb(225, 225, 225);">1</text></g><g id="p0_labelGroup6-inner" data-index="6" class="p0_labelGroup-inner" transform="translate(264.05386486086167,152.07495474999433)" style="opacity: 1;"><text id="p0_segmentValue6-inner" class="p0_segmentValue-inner" style="font-size: 10px; font-family: verdana; fill: rgb(225, 225, 225);">3</text></g></g><g class="p0_labels-outer"><g id="p0_labelGroup0-outer" data-index="0" class="p0_labelGroup-outer" transform="translate(432.0377851638814,143.5)" style="opacity: 1;"><text id="p0_segmentMainLabel0-outer" class="p0_segmentMainLabel-outer" style="font-size: 10px; font-family: verdana; fill: rgb(51, 51, 51);">When's it going to be done?</text></g><g id="p0_labelGroup1-outer" data-index="1" class="p0_labelGroup-outer" transform="translate(360.0198314223984,355.65805034418173)" style="opacity: 1;"><text id="p0_segmentMainLabel1-outer" class="p0_segmentMainLabel-outer" style="font-size: 10px; font-family: verdana; fill: rgb(51, 51, 51);">Bennnnn!</text></g><g id="p0_labelGroup2-outer" data-index="2" class="p0_labelGroup-outer" transform="translate(177.78125,347.0377851638814)" style="opacity: 1;"><text id="p0_segmentMainLabel2-outer" class="p0_segmentMainLabel-outer" style="font-size: 10px; font-family: verdana; fill: rgb(51, 51, 51);">Oh, god.</text></g><g id="p0_labelGroup3-outer" data-index="3" class="p0_labelGroup-outer" transform="translate(66.15444965581827,275.01983142239834)" style="opacity: 1;"><text id="p0_segmentMainLabel3-outer" class="p0_segmentMainLabel-outer" style="font-size: 10px; font-family: verdana; fill: rgb(51, 51, 51);">But it's Friday night!</text></g><g id="p0_labelGroup4-outer" data-index="4" class="p0_labelGroup-outer" transform="translate(114.20205188292883,179.43596227972435)" style="opacity: 1;"><text id="p0_segmentMainLabel4-outer" class="p0_segmentMainLabel-outer" style="font-size: 10px; font-family: verdana; fill: rgb(51, 51, 51);">Again?</text></g><g id="p0_labelGroup5-outer" data-index="5" class="p0_labelGroup-outer" transform="translate(68.14972729660596,127.29454707770064)" style="opacity: 1;"><text id="p0_segmentMainLabel5-outer" class="p0_segmentMainLabel-outer" style="font-size: 10px; font-family: verdana; fill: rgb(51, 51, 51);">I'm considering an affair.</text></g><g id="p0_labelGroup6-outer" data-index="6" class="p0_labelGroup-outer" transform="translate(174.18329357760166,80.34194965581827)" style="opacity: 1;"><text id="p0_segmentMainLabel6-outer" class="p0_segmentMainLabel-outer" style="font-size: 10px; font-family: verdana; fill: rgb(51, 51, 51);">[baleful stare]</text></g></g><g class="p0_tooltips"><g class="p0_tooltip" id="p0_tooltip0" transform="translate(1590,1400)" style="opacity: 0;"><rect rx="2" ry="2" x="-4" opacity="0.5" style="fill: rgb(0, 0, 0);" width="168.34375" height="19" y="-13"></rect><text fill="#efefef" style="font-size: 10px; font-family: arial;">When's it going to be done?: 8, 33%</text></g><g class="p0_tooltip" id="p0_tooltip1" style="opacity: 0;"><rect rx="2" ry="2" x="-4" opacity="0.5" style="fill: rgb(0, 0, 0);" width="87.5" height="19" y="-13"></rect><text fill="#efefef" style="font-size: 10px; font-family: arial;">Bennnnn!: 5, 21%</text></g><g class="p0_tooltip" id="p0_tooltip2" transform="translate(1590,1400)" style="opacity: 1;"><rect rx="2" ry="2" x="-4" opacity="0.5" style="fill: rgb(0, 0, 0);" width="77.484375" height="19" y="-13"></rect><text fill="#efefef" style="font-size: 10px; font-family: arial;">Oh, god.: 2, 8%</text></g><g class="p0_tooltip" id="p0_tooltip3" style="opacity: 0;"><rect rx="2" ry="2" x="-4" opacity="0.5" style="fill: rgb(0, 0, 0);" width="132.1875" height="19" y="-13"></rect><text fill="#efefef" style="font-size: 10px; font-family: arial;">But it's Friday night!: 3, 13%</text></g><g class="p0_tooltip" id="p0_tooltip4" style="opacity: 0;"><rect rx="2" ry="2" x="-4" opacity="0.5" style="fill: rgb(0, 0, 0);" width="70.265625" height="19" y="-13"></rect><text fill="#efefef" style="font-size: 10px; font-family: arial;">Again?: 2, 8%</text></g><g class="p0_tooltip" id="p0_tooltip5" style="opacity: 0;"><rect rx="2" ry="2" x="-4" opacity="0.5" style="fill: rgb(0, 0, 0);" width="147.75" height="19" y="-13"></rect><text fill="#efefef" style="font-size: 10px; font-family: arial;">I'm considering an affair.: 1, 4%</text></g><g class="p0_tooltip" id="p0_tooltip6" style="opacity: 0;"><rect rx="2" ry="2" x="-4" opacity="0.5" style="fill: rgb(0, 0, 0);" width="104.71875" height="19" y="-13"></rect><text fill="#efefef" style="font-size: 10px; font-family: arial;">[baleful stare]: 3, 13%</text></g></g></svg></div>
+
+<script src="./pienew_files/d3.v3.min.js" charset="utf-8"></script>
+<script src="./pienew_files/d3pie.min.js"></script>
+<script>
+var arrContent = [
+			{
+				"label": "When's it going to be done?",
+				"value": 8,
+				"color": "#7e3838"
+			},
+			{
+				"label": "Bennnnn!",
+				"value": 5,
+				"color": "#7e6538"
+			},
+			{
+				"label": "Oh, god.",
+				"value": 2,
+				"color": "#7c7e38"
+			},
+			{
+				"label": "But it's Friday night!",
+				"value": 3,
+				"color": "#587e38"
+			},
+			{
+				"label": "Again?",
+				"value": 2,
+				"color": "#387e45"
+			},
+			{
+				"label": "I'm considering an affair.",
+				"value": 1,
+				"color": "#387e6a"
+			},
+			{
+				"label": "[baleful stare]",
+				"value": 3,
+				"color": "#386a7e"
+			}
+		];
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "URL",
+			"fontSize": 22,
+			"font": "georgia"
+		},
+		"subtitle": {
+			"text": "Share of URLs that user has clicked",
+			"color": "#999999",
+			"fontSize": 10,
+			"font": "lucida sans"
+		},
+		"titleSubtitlePadding": 12
+	},
+	"footer": {
+		"text": "Source: class_click.csv",
+		"color": "#999999",
+		"fontSize": 11,
+		"font": "open sans",
+		"location": "bottom-center"
+	},
+	"size": {
+		"canvasHeight": 400,
+		"canvasWidth": 590,
+		"pieInnerRadius": "18%",
+		"pieOuterRadius": "88%"
+	},
+	"data": {
+		"smallSegmentGrouping": {
+			"enabled": true
+		},
+		"content": arrContent
+	},
+	"labels": {
+		"outer": {
+			"pieDistance": 32
+		},
+		"inner": {
+			"format": "value"
+		},
+		"mainLabel": {
+			"font": "verdana"
+		},
+		"percentage": {
+			"color": "#e1e1e1",
+			"font": "verdana",
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#e1e1e1",
+			"font": "verdana"
+		},
+		"lines": {
+			"enabled": true,
+			"color": "#cccccc"
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"tooltips": {
+		"enabled": true,
+		"type": "placeholder",
+		"string": "{label}: {value}, {percentage}%"
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
+		}
+	}
+});
+</script>
+
+
+</body></html>

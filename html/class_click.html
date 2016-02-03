@@ -1,0 +1,493 @@
+<html>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<body>
+<p><b><h4><center>Class_Click Visualization</center></h4></b></p>
+<div id="select">Choose User</div>
+<div id="pieChart"></div>
+
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+</style>
+<svg class="chart"></svg>
+
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="d3pie.js"></script>
+<script>
+
+
+
+
+var arrContent=[];
+var arrContentsfull=[];
+var arraycomp=[];
+
+
+
+
+d3.csv("class_click.csv", function(error, data) {
+    var select = d3.select("#select")
+      .append("div")
+      .append("select")
+
+    
+
+    select.selectAll("option")
+      .data(d3.map(data, function(d){return d.u_id;}).keys())
+      .enter()
+        .append("option")
+        .attr("value", function (d) { return d; })
+        .text(function (d) { return d; });
+    
+var Count = d3.nest()
+  .key(function(d) { return d.u_id; })
+  .rollup(function(v) { return v.url; })
+  .entries(data);
+
+Count.forEach(function(entry){
+
+
+  });
+
+
+var counts = {};
+
+var keys=[];
+
+var countsfull = {};
+var keysfull=[];
+/*
+
+data.forEach(function(r) {
+
+
+var keyf = r.operation;
+
+if(keysfull.indexOf(keyf)<0){ keysfull.push(keyf);}
+    if (!countsfull[keyf]) 
+    {
+       
+        countsfull[keyf] = {
+           target: r.target,
+           count: 0
+        };
+    }
+    countsfull[keyf].count++;
+   
+
+ 
+});
+*/
+
+
+data.forEach(function(r) {
+var temp=r.target;
+var pos=temp.search("http");
+if(pos!=0){
+    var keyf =  r.target;
+  if(keysfull.indexOf(keyf)<0){ keysfull.push(keyf);}
+
+    if (!countsfull[keyf]) {
+        countsfull[keyf] = {
+           
+           target: r.target,
+           count: 0
+        };
+    }
+    countsfull[keyf].count++;}
+else{
+var keyf = "-http links";
+ // keys.push(keyf);
+if(keysfull.indexOf(keyf)<0){ keysfull.push(keyf);}
+    if (!countsfull[keyf]) {
+        countsfull[keyf] = {
+          
+           target: "http links",
+           count: 0
+        };
+    }
+    countsfull[keyf].count++;
+}
+
+ //document.write("<br>"+r.u_id+""+counts[key].count);
+});
+
+
+
+
+
+
+
+
+
+
+
+data.forEach(function(r) {
+var temp=r.target;
+var pos=temp.search("http");
+if(pos!=0){
+    var key = r.u_id +"-"+ r.target;
+  if(keys.indexOf(key)<0){ keys.push(key);}
+
+    if (!counts[key]) {
+        counts[key] = {
+           u_id: r.u_id,
+           target: r.target,
+           count: 0
+        };
+    }
+    counts[key].count++;}
+else{
+var key = r.u_id + "-http links";
+ // keys.push(key);
+if(keys.indexOf(key)<0){ keys.push(key);}
+    if (!counts[key]) {
+        counts[key] = {
+           u_id: r.u_id,
+           target: "http links",
+           count: 0
+        };
+    }
+    counts[key].count++;
+}
+
+ //document.write("<br>"+r.u_id+""+counts[key].count);
+});
+
+
+var datanew = [];
+Object.keys(counts).forEach(function(key) {
+    datanew.push(counts[key]);
+//document.write("<br>"+key+"-"+counts[key].count);
+
+
+
+});
+
+
+select
+      .on("change", function(d) {
+     //change(location.reload());
+        var value = d3.select(this).property("value");
+
+arrContent=[];
+arrContentsfull=[];
+arrcomp=[];
+
+
+var colors = ['#FFCC09', '#FFCC00', '#DDFF00', '#99FJ07', '#44FF30', '#00FF69', '#00FF39', '#00FFCC', '#FF0023', '#FF6901', '#FF6771', '#FF9931']; 
+
+for(var x=0,y=0;x<keys.length;x++,y++){
+if(keys[x].match(value)){//document.write("<br>"+counts[keys[x]].count+"-"+keys[x]);
+
+
+
+//arrContent=[];
+arrContent.push({"label":keys[x],"value":counts[keys[x]].count,"color":colors[y]});}}
+
+
+
+
+for(var x=0, y = 0; x<keysfull.length; x++,y++){
+
+  //arrContentsfull.push({"label":countsfull[keysfull[x]].operation,"value":countsfull[keysfull[x]].count,"color": color_box[i]});
+
+arrContentsfull.push({"label":countsfull[keysfull[x]].target,"value":countsfull[keysfull[x]].count,"color": colors[y]});
+  //console.log(counts_social[keys_social[x]].operation +counts_social[keys_social[x]].count);
+}
+
+
+
+for(var x=0, y = 0; x<keysfull.length; x++,y++){
+
+if(keys[x].match(keysfull[x])){
+  //arrContentsfull.push({"label":countsfull[keysfull[x]].operation,"value":countsfull[keysfull[x]].count,"color": color_box[i]});
+   var percent=Math.round(counts[keys[x]].count/countsfull[keysfull[x]].count);
+arrcomp.push({"label":countsfull[keysfull[x]].target,"value":percent,"color": colors[y]});
+}
+  //console.log(counts_social[keys_social[x]].operation +counts_social[keys_social[x]].count);
+}
+
+
+
+
+
+var pie = new d3pie("pieChart", {
+
+	"header": {
+		"title": {
+			"text": "Values of Target specific to particular user",
+			"fontSize": 22,
+			"font": "georgia"
+		},
+		"subtitle": {
+			"text": "Targets of URLs that user has clicked",
+			"color": "#999999",
+			"fontSize": 10,
+			"font": "lucida sans"
+		},
+		"titleSubtitlePadding": 12
+	},
+	"footer": {
+		"text": "Source: class_click.csv",
+		"color": "#999999",
+		"fontSize": 11,
+		"font": "open sans",
+		"location": "bottom-center"
+	},
+	"size": {
+		"canvasHeight": 400,
+		"canvasWidth": 590,
+		"pieInnerRadius": "18%",
+		"pieOuterRadius": "88%"
+	},
+	"data": {
+		"smallSegmentGrouping": {
+			"enabled": true
+		},
+		"content": arrContent
+	},
+	"labels": {
+		"outer": {
+			"pieDistance": 32
+		},
+		"inner": {
+			"format": "value"
+		},
+		"mainLabel": {
+			"font": "verdana"
+		},
+		"percentage": {
+			"color": "#e1e1e1",
+			"font": "verdana",
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#e1e1e1",
+			"font": "verdana"
+		},
+		"lines": {
+			"enabled": true,
+			"color": "#cccccc"
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"tooltips": {
+		"enabled": true,
+		"type": "placeholder",
+		"string": "{label}: {value}, {percentage}%"
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
+		}
+	}
+});
+
+
+
+
+
+var piefull = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Values of Target correspond to all users",
+			"fontSize": 22,
+			"font": "georgia"
+		},
+		"subtitle": {
+			"text": "Targets of URLs that user has clicked",
+			"color": "#999999",
+			"fontSize": 10,
+			"font": "lucida sans"
+		},
+		"titleSubtitlePadding": 12
+	},
+	"footer": {
+		"text": "Source: class_click.csv",
+		"color": "#999999",
+		"fontSize": 11,
+		"font": "open sans",
+		"location": "bottom-center"
+	},
+	"size": {
+		"canvasHeight": 400,
+		"canvasWidth": 590,
+		"pieInnerRadius": "18%",
+		"pieOuterRadius": "88%"
+	},
+	"data": {
+		"smallSegmentGrouping": {
+			"enabled": true
+		},
+		"content": arrContentsfull
+	},
+	"labels": {
+		"outer": {
+			"pieDistance": 32
+		},
+		"inner": {
+			"format": "value"
+		},
+		"mainLabel": {
+			"font": "verdana"
+		},
+		"percentage": {
+			"color": "#e1e1e1",
+			"font": "verdana",
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#e1e1e1",
+			"font": "verdana"
+		},
+		"lines": {
+			"enabled": true,
+			"color": "#cccccc"
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"tooltips": {
+		"enabled": true,
+		"type": "placeholder",
+		"string": "{label}: {value}, {percentage}%"
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
+		}
+	}
+});
+
+
+
+
+
+
+
+
+
+
+
+var piepercent= new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "  Percentage of specific Values of Target for Specific users",
+			"fontSize": 22,
+			"font": "georgia"
+		},
+		"subtitle": {
+			"text": "Targets of  URLs that user has clicked",
+			"color": "#999999",
+			"fontSize": 10,
+			"font": "lucida sans"
+		},
+		"titleSubtitlePadding": 12
+	},
+	"footer": {
+		"text": "Source: class_click.csv",
+		"color": "#999999",
+		"fontSize": 11,
+		"font": "open sans",
+		"location": "bottom-center"
+	},
+	"size": {
+		"canvasHeight": 400,
+		"canvasWidth": 590,
+		"pieInnerRadius": "18%",
+		"pieOuterRadius": "88%"
+	},
+	"data": {
+		"smallSegmentGrouping": {
+			"enabled": true
+		},
+		"content": arrcomp
+	},
+	"labels": {
+		"outer": {
+			"pieDistance": 32
+		},
+		"inner": {
+			"format": "value"
+		},
+		"mainLabel": {
+			"font": "verdana"
+		},
+		"percentage": {
+			"color": "#e1e1e1",
+			"font": "verdana",
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#e1e1e1",
+			"font": "verdana"
+		},
+		"lines": {
+			"enabled": true,
+			"color": "#cccccc"
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"tooltips": {
+		"enabled": true,
+		"type": "placeholder",
+		"string": "{label}: {value}, {percentage}%"
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
+		}
+	}
+
+
+});
+
+
+
+      });
+
+
+
+
+
+
+
+  });
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html

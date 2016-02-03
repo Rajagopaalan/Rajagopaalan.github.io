@@ -1,0 +1,75 @@
+<html>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<body>
+<p>Hello world </p>
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+</style>
+<svg class="chart"></svg>
+
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script>
+d3.csv("day.csv", function(error, data) {
+var counts = {};
+/*data.forEach(function(r) {
+    if (!counts[r.u_id]) {
+        counts[r.u_id] = 0;
+    }
+    counts[r.u_id]++;
+
+});
+
+var data = [];
+Object.keys(counts).forEach(function(key) {
+    data.push({
+        u_id: key,
+        count: counts[key]
+    });
+document.write(counts[key]);
+});*/
+var counts = {};
+data.forEach(function(r) {
+    var key = r.Day + r.What;
+    if (!counts[key]) {
+        counts[key] = {
+           day: r.Day,
+           what: r.What,
+           count: 0
+        };
+    }
+    counts[key].count++;
+ document.write("<>"+counts[key].count);
+});
+
+var data = [];
+Object.keys(counts).forEach(function(key) {
+    data.push(counts[key]);
+});
+
+
+
+  });
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html
