@@ -1,0 +1,18 @@
+RoomNO Ac/NonAc 1Bed/2Bed Deluxe/SemiDeluxe Rate Availability
+1000 NonAc 1Bed Deluxe 100 yes
+1001 Ac 1Bed Deluxe 200 yes
+1002 NonAc 1Bed SemiDeluxe 150 yes
+1003 Ac 1Bed SemiDeluxe 250 yes
+1004 NonAc 2Bed Deluxe 300 No
+1005 Ac 2Bed Deluxe 450 No
+1006 NonAc 2Bed SemiDeluxe 350 No
+1007 Ac 2Bed SemiDeluxe 400 No
+1008 NonAc 1Bed Deluxe 100 yes
+1009 Ac 1Bed Deluxe 200 yes
+1010 NonAc 1Bed SemiDeluxe 150 yes
+1011 Ac 1Bed SemiDeluxe 250 yes
+1012 NonAc 2Bed Deluxe 300 No
+1013 Ac 2Bed Deluxe 450 No
+1014 NonAc 2Bed SemiDeluxe 350 No
+1015 Ac 2Bed SemiDeluxe 400 No
+
