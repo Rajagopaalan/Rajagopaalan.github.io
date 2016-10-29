@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl"  href="personschema.xslt"?>
+<Persons>
+<Person>
+  <Name>
+   
+    <Last>Sethuraman</Last>
+  </Name>
+  <Credential>
+    <Id>rajas</Id>
+    <Password Encryption="Yes">asu123</Password>
+  </Credential>
+  <Phone>
+    <Work>
+      2806163490
+    </Work>
+    <Cell Provider="Tmobile">
+      2806163490
+    </Cell>
+  </Phone>
+
+  <Category>brother</Category>
+</Person>
+  
+  <Person>
+    <Name>
+      <First>Sriram</First>
+      <Last>Ravi</Last>
+    </Name>
+    <Credential>
+      <Id>srirm</Id>
+      <Password Encryption="Yes">asu1234</Password>
+    </Credential>
+    <Phone>
+      <Work>
+        28061634343
+      </Work>
+      <Cell Provider="Tmobile">
+        28061343434
+      </Cell>
+    </Phone>
+
+    <Category>Friend</Category>
+  </Person>
+  <Person>
+    <Name>
+      <First>Narayanan</First>
+      <Last>Narasimhan</Last>
+    </Name>
+    <Credential>
+      <Id>narayan</Id>
+      <Password Encryption="Yes">asu423</Password>
+    </Credential>
+    <Phone>
+      <Work>
+        2806163491
+      </Work>
+      <Cell Provider="Tmobile">
+        2806163492
+      </Cell>
+    </Phone>
+
+    <Category>colleague</Category>
+  </Person>
+  <Person>
+    <Name>
+      <First>Harish</First>
+      <Last>ram</Last>
+    </Name>
+    <Credential>
+      <Id>hajas</Id>
+      <Password Encryption="Yes">asu1237</Password>
+    </Credential>
+    <Phone>
+      <Work>
+        2806163478
+      </Work>
+      <Cell Provider="Tmobile">
+        2806163490
+      </Cell>
+    </Phone>
+
+    <Category>Professor</Category>
+  </Person>
+  <Person>
+    <Name>
+      <First>Govind</First>
+      <Last>Sethuraman</Last>
+    </Name>
+    <Credential>
+      <Id>rajas</Id>
+      <Password Encryption="Yes">asu1238</Password>
+    </Credential>
+    <Phone>
+      <Work>
+        2806163497
+      </Work>
+      <Cell Provider="Tmobile">
+        2806163495
+      </Cell>
+    </Phone>
+
+    <Category>neighbour</Category>
+  </Person>
+</Persons>

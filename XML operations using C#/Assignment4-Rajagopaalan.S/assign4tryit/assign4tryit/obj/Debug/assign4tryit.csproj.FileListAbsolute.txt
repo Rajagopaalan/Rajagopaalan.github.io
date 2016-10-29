@@ -1,0 +1,6 @@
+c:\users\rajagopaalan\documents\visual studio 2013\Projects\assign4tryit\assign4tryit\obj\Debug\assign4tryit.csprojResolveAssemblyReference.cache
+c:\users\rajagopaalan\documents\visual studio 2013\Projects\assign4tryit\assign4tryit\bin\assign4tryit.dll.config
+c:\users\rajagopaalan\documents\visual studio 2013\Projects\assign4tryit\assign4tryit\bin\assign4tryit.dll
+c:\users\rajagopaalan\documents\visual studio 2013\Projects\assign4tryit\assign4tryit\bin\assign4tryit.pdb
+c:\users\rajagopaalan\documents\visual studio 2013\Projects\assign4tryit\assign4tryit\obj\Debug\assign4tryit.dll
+c:\users\rajagopaalan\documents\visual studio 2013\Projects\assign4tryit\assign4tryit\obj\Debug\assign4tryit.pdb
